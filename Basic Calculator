@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آلة حاسبة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>آلة حاسبة بسيطة</h1>
+    <input type="number" id="num1" placeholder="الرقم الأول">
+    <input type="number" id="num2" placeholder="الرقم الثاني"><br>
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">×</button>
+    <button onclick="calculate('/')">÷</button>
+    <h2 id="result">النتيجة: </h2>
+
+    <script>
+        function calculate(operator) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            let result = 0;
+            if (operator === '+') result = num1 + num2;
+            else if (operator === '-') result = num1 - num2;
+            else if (operator === '*') result = num1 * num2;
+            else if (operator === '/') result = num1 / num2;
+            document.getElementById('result').innerText = `النتيجة: ${result}`;
+        }
+    </script>
+</body>
+</html>
