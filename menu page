@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة الطعام</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .menu-item {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 8px;
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+        }
+        h2 {
+            color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <h1>قائمة الطعام</h1>
+    <div class="menu-item">
+        <h2>بيتزا</h2>
+        <p>بيتزا بالجبنة والمشروم.</p>
+        <p>السعر: $10</p>
+    </div>
+    <div class="menu-item">
+        <h2>برجر</h2>
+        <p>برجر بلحم البقر الطازج.</p>
+        <p>السعر: $8</p>
+    </div>
+    <div class="menu-item">
+        <h2>شاورما</h2>
+        <p>شاورما دجاج مع الخبز العربي.</p>
+        <p>السعر: $5</p>
+    </div>
+</body>
+</html>
